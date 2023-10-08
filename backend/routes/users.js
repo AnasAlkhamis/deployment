@@ -6,7 +6,7 @@ const usersRouter = express.Router();
 
 /*
  * Testing Routes:
- * POST -> http://localhost:5000/users/
+ * POST -> https://test-b4i8.onrender.com/users/
 */
 
 /*

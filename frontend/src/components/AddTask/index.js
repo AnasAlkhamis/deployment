@@ -24,7 +24,7 @@ const AddTask = () => {
     e.preventDefault();
     try {
       const result = await axios.post(
-        "http://localhost:5000/tasks",
+        "https://test-b4i8.onrender.com/tasks",
         { task },
         {
           headers: {
