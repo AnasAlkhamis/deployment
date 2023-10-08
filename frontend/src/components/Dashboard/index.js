@@ -27,7 +27,7 @@ const Dashboard = () => {
 
   const getAllTasks = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/tasks", {
+      const res = await axios.get("https://test-npw8.onrender.com/tasks", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -58,7 +58,7 @@ const Dashboard = () => {
   const updateTask = async (id) => {
     try {
       const res = await axios.put(
-        `http://localhost:5000/tasks/${id}`,
+        `https://test-npw8.onrender.com/tasks/${id}`,
         {
           task,
           completed,
@@ -81,7 +81,7 @@ const Dashboard = () => {
 
   const deleteTask = async (id) => {
     try {
-      const res = await axios.delete(`http://localhost:5000/tasks/${id}`, {
+      const res = await axios.delete(`https://test-npw8.onrender.com/tasks/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
