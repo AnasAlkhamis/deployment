@@ -27,7 +27,7 @@ const Login = () => {
   const loginUser = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://test-b4i8.onrender.com/login", {
+      const res = await axios.post("http://localhost:5000/login", {
         email,
         password,
       });
